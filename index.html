@@ -25,10 +25,26 @@
         </div>
 
         <div class="col-lg-6">
+          <h3>Crust Flavor</h3>
+          <input type="radio" name="flavorCrust" value="none" checked>No crust flavor<br>
+          <input type="radio" name="flavorCrust" value="garlic">Garlic Flavor<br>
+          <input type="radio" name="flavorCrust" value="parmesan">Parmesan<br>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
           <h3>Size:</h3>
-          <input type="radio" name="pizzaSize" value="Large" checked>Large<br>
-          <input type="radio" name="pizzaSize" value="medium">Medium<br>
-          <input type="radio" name="pizzaSize" value="small">Small<br>
+          <input type="radio" name="pizzaSize" value="large" checked>Large ($5)<br>
+          <input type="radio" name="pizzaSize" value="medium">Medium($3)<br>
+          <input type="radio" name="pizzaSize" value="small">Small($1)<br>
+        </div>
+
+        <div class="col-lg-6">
+          <h3>Sauce:</h3>
+          <input type="radio" name="pizzaSauce" value="classic" checked>Classic Marinara<br>
+          <input type="radio" name="pizzaSauce" value="parmesan">Parmesan<br>
+          <input type="radio" name="pizzaSauce" value="low">Low Carb Marinara ($1 more)<br>
         </div>
       </div>
 
@@ -41,7 +57,7 @@
 
       <div class="row">
         <div class="col-lg-6">
-          <h4>Meats</h4>
+          <h4>Meats:</h4>
           <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br>
           <input type="checkbox" name="toppings" value="sausage">Sausage<br>
           <input type="checkbox" name="toppings" value="meatball">Meatball<br>
@@ -52,7 +68,7 @@
           <input type="checkbox" name="toppings" value="pork">Pork<br>
         </div>
         <div class="col-lg-6">
-          <h4>Veggies</h4>
+          <h4>Veggies:</h4>
           <input type="checkbox" name="toppings" value="mushrooms">Mushrooms<br>
           <input type="checkbox" name="toppings" value="spinach">Spinach<br>
           <input type="checkbox" name="toppings" value="onions">Onions<br>
@@ -65,9 +81,20 @@
         </div>
       </div>
 
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Cheese Options</h3>
+          <input type="radio" name="cheese" value="regular" checked>Regular<br>
+          <input type="radio" name="cheese" value="extra">Extra Cheese ($1 more)<br>
+          <input type="radio" name="cheese" value="light">Light<br>
+        </div>
+      </div>
 
-      <input type="checkbox" name="toppings" value="extraCheese">Extra Cheese
-      <button id="addPizza">Pizza Me!</button>
+      <div class="row">
+        <div class="col-lg-12">
+          <button id="addPizza">Pizza Me!</button>
+        </div>
+      </div>
     </div>
 
     <div class="container" id="order">
