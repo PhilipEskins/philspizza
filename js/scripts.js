@@ -6,16 +6,21 @@ function Pizza (size, toppings, price) {
 }
 
 Pizza.prototype.calculateTotal = function(size, toppings) {
-  if (size === "Large") {
-    this.price = 5;
-  } else if (size === "medium") {
-    this.price = 3;
-  } else if (size === "small") {
-    this.price = 1;
-  }
+  var total = 0;
+    if (size === "Large") {
+      total += 5;
+    } else if (size === "medium") {
+      total += 3;
+    } else if (size === "small") {
+      total += 1;
+    }
+    if (toppings.indexOf('extraCheese') === 0) {
+      total += 1;
+    }
+  this.price = total;
 }
 
-function newPizza(size, toppings, price) {
+function newPizza(size, toppings) {
   var newPizza = new Pizza(size, toppings, 0);
   return newPizza;
 }
@@ -37,6 +42,5 @@ $(document).ready(function() {
     $("#size").text(userPizza.size);      $("#selectedToppings").text(userPizza.toppings);
     userPizza.calculateTotal(size, toppingsArr);
     $("#price").text(userPizza.price);
-    console.log(userPizza.toppings);
   });
 });
