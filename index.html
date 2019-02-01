@@ -11,6 +11,25 @@
   <body>
     <div class="container">
       <h1>Original Phil's Pizza</h1>
+      <button id="newPizza">Start Pizza</button>
     </div>
+
+    <div class="container" id="pizzaMenu">
+      <h2>Select your options below:</h2>
+      <h3>Size:</h3>
+      <input type="radio" name="pizzaSize" value="Large" checked>Large
+      <input type="radio" name="pizzaSize" value="medium">Medium
+      <input type="radio" name="pizzaSize" value="small">Small
+
+      <h3>Toppings</h3>
+      <input type="checkbox" name="toppings" value="extraCheese">Extra Cheese
+      <input type="checkbox" name="toppings" value="ham">Ham
+      <input type="checkbox" name="toppings" value="pineapple">Pineapple
+      <br>
+      <button id="addPizza">Pizza Me!</button>
+    </div>
+
+    <div class="container" id="order">
+      <p>You ordered a <span id="size"></span> with <span id="selectedToppings"></span> the price is <span id="price"></span></p>
   </body>
 </html>
