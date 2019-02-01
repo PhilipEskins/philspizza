@@ -29,6 +29,7 @@ $(document).ready(function() {
 // Start Screen
   $("#newPizza").click(function(event) {
     $("#newPizza").hide();
+    $("#pizzaMenu").show();
   });
 
   $("#addPizza").click(function(event){
@@ -39,6 +40,8 @@ $(document).ready(function() {
       toppingsArr.push(toppings);
     })
     var userPizza = newPizza(size, toppingsArr);
+    $("#pizzaMenu").hide();
+    $("#order").show();
     $("#size").text(userPizza.size);      $("#selectedToppings").text(userPizza.toppings);
     userPizza.calculateTotal(size, toppingsArr);
     $("#price").text(userPizza.price);

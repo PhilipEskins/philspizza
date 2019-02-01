@@ -16,16 +16,57 @@
 
     <div class="container" id="pizzaMenu">
       <h2>Select your options below:</h2>
-      <h3>Size:</h3>
-      <input type="radio" name="pizzaSize" value="Large" checked>Large
-      <input type="radio" name="pizzaSize" value="medium">Medium
-      <input type="radio" name="pizzaSize" value="small">Small
+      <div class="row">
+        <div class="col-lg-6">
+          <h3>Crust</h3>
+          <input type="radio" name="pizzaCrust" value="original" checked>Original<br>
+          <input type="radio" name="pizzaCrust" value="thin">Thin<br>
+          <input type="radio" name="pizzaCrust" value="cauliflower">Cauliflower ($2 more)<br>
+        </div>
 
-      <h3>Toppings</h3>
+        <div class="col-lg-6">
+          <h3>Size:</h3>
+          <input type="radio" name="pizzaSize" value="Large" checked>Large<br>
+          <input type="radio" name="pizzaSize" value="medium">Medium<br>
+          <input type="radio" name="pizzaSize" value="small">Small<br>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-12">
+          <h3>Toppings</h3>
+          <p>The first two toppings are included, each additional topping is $1 more</p>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6">
+          <h4>Meats</h4>
+          <input type="checkbox" name="toppings" value="pepperoni">Pepperoni<br>
+          <input type="checkbox" name="toppings" value="sausage">Sausage<br>
+          <input type="checkbox" name="toppings" value="meatball">Meatball<br>
+          <input type="checkbox" name="toppings" value="ham">Ham<br>
+          <input type="checkbox" name="toppings" value="bacon">Bacon<br>
+          <input type="checkbox" name="toppings" value="chicken">Grilled Chicken<br>
+          <input type="checkbox" name="toppings" value="beef">Beef<br>
+          <input type="checkbox" name="toppings" value="pork">Pork<br>
+        </div>
+        <div class="col-lg-6">
+          <h4>Veggies</h4>
+          <input type="checkbox" name="toppings" value="mushrooms">Mushrooms<br>
+          <input type="checkbox" name="toppings" value="spinach">Spinach<br>
+          <input type="checkbox" name="toppings" value="onions">Onions<br>
+          <input type="checkbox" name="toppings" value="olives">Black Olives<br>
+          <input type="checkbox" name="toppings" value="bellPeppers">Bell Peppers<br>
+          <input type="checkbox" name="toppings" value="bananaPeppers">Banana Peppers<br>
+          <input type="checkbox" name="toppings" value="pineapple">Pineapple<br>
+          <input type="checkbox" name="toppings" value="peppers">Jalapeno Peppers<br>
+          <input type="checkbox" name="toppings" value="tomatoes">Tomatoes<br>
+        </div>
+      </div>
+
+
       <input type="checkbox" name="toppings" value="extraCheese">Extra Cheese
-      <input type="checkbox" name="toppings" value="ham">Ham
-      <input type="checkbox" name="toppings" value="pineapple">Pineapple
-      <br>
       <button id="addPizza">Pizza Me!</button>
     </div>
 
