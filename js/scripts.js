@@ -61,7 +61,7 @@ $(document).ready(function() {
     var userPizza = newPizza(crust, crustFlavor, size, sauce, toppingsArr, cheese);
     // $("#pizzaMenu").hide();
     $("#order").show();
-    $("#size").text(userPizza.size);      $("#selectedToppings").text(userPizza.toppings);
+    $("#size").text(userPizza.size);
     userPizza.calculateTotal(crust, size, sauce, toppingsArr, cheese);
     $("#price").text(userPizza.price);
   });
