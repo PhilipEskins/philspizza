@@ -59,10 +59,15 @@ $(document).ready(function() {
     })
     var cheese = $("input:radio[name=cheese]:checked").val();
     var userPizza = newPizza(crust, crustFlavor, size, sauce, toppingsArr, cheese);
-    // $("#pizzaMenu").hide();
+    $("#pizzaMenu").hide();
     $("#order").show();
     $("#size").text(userPizza.size);
     userPizza.calculateTotal(crust, size, sauce, toppingsArr, cheese);
     $("#price").text(userPizza.price);
+  });
+
+  $("#over").click(function(event) {
+    $("#pizzaMenu").show();
+    $("#order").hide();
   });
 });
